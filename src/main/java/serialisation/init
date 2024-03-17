@@ -1,0 +1,34 @@
+        List<Chanson> chansons = new ArrayList<>();
+        List<LivreAudio> livres = new ArrayList<>();
+
+        PlayList chansonLiker = new PlayList("Liker", 1, null, chansons);
+        PlayList audioBooki = new PlayList("LoveLace", 2, livres, null);
+
+
+        chansons.add(new Chanson("Smells Like Teen Spirit", "Nirvana", 1, 45, "https://youtu.be/hTWKbfoikeg?si=FtxS8xANFRP88OzE"));
+        chansons.add(new Chanson("Bohemian Rhapsody", "Queen", 2, 60, "https://youtu.be/fJ9rUzIMcZQ?si=3PfMDZwn_Lhw-Ct9"));
+        chansons.add(new Chanson("Stairway to Heaven", "Led Zeppelin", 1, 61, "https://youtu.be/xbhCPt6PZIU?si=-BjiCPS1djldLP6G"));
+        chansons.add(new Chanson("Hotel California", "The Eagles", 1, 65, "https://youtu.be/09839DpTctU?si=03A1-uD2CV6Ro0ua"));
+        chansons.add(new Chanson("Back in Black", "AC/DC", 2, 42, "https://youtu.be/pAgnJDJN4VA?si=bLqxgpcM9KOtBIqz"));
+        chansons.add(new Chanson("Imagine", "John Lennon", 1, 40, "https://youtu.be/ugrAo8wEPiI?si=MAPgAgA-sFVghhuw"));
+        chansons.add(new Chanson("Thriller", "Michael Jackson", 3, 55, "https://youtu.be/sOnqjkJTMaA?si=DuQDCWwKEViwPfTU"));
+        chansons.add(new Chanson("Like a Rolling Stone", "Bob Dylan", 1, 65, "https://youtu.be/IwOfCgkyEj0?si=zVxmlNYFVHFXYfOL"));
+        chansons.add(new Chanson("Tennessee Whiskey", "Chris Stapleton", 1, 160, "https://youtu.be/4zAThXFOy2c?si=auEA2vwVKUaaBLx2"));
+        chansons.add(new Chanson("Wagon Wheel", "Darius Rucker", 2, 155, "https://youtu.be/hvKyBcCDOB4?si=hUEAdPHo6apF-99h"));
+        chansons.add(new Chanson("Jolene", "Dolly Parton", 2, 140, "https://youtu.be/Ixrje2rXLMA?si=yigzfJ6TxiecvZ4f"));
+        chansons.add(new Chanson("Take Me Home, Country Roads", "John Denver", 2, 150, "https://youtu.be/1vrEljMfXYo?si=de0KthDqflOO2XSO"));
+        chansons.add(new Chanson("Friends in Low Places", "Garth Brooks", 2, 170, "https://youtu.be/mvCgSqPZ4EM?si=QVccr7ukPUDa2Koj"));
+        chansons.add(new Chanson("Before He Cheats", "Carrie Underwood", 2, 255, "https://youtu.be/WaSy8yy-mr8?si=q8RSDf33aqpYCzQk"));
+        chansons.add(new Chanson("The Dance", "Garth Brooks", 1, 165, "https://youtu.be/lhyijN4ftko?si=rchns0gCLo1cTRIq"));
+
+        livres.add(new LivreAudio("Harry Potter", "JK Rowling", 8, 6, "https://youtu.be/m7ww5Wq2OQg?si=SQLan6a4-IqLKn4R", Langue.EN));
+        livres.add(new LivreAudio("Hobbit", "Patrick Momolo", 10, 87, "https://youtu.be/UMrIM0jLEyQ?si=qivSptvf0jzGp6Rq", Langue.FR));
+        livres.add(new LivreAudio("Sherlock Holmes", "Benedict Cumberbatch", 2, 180, "https://youtu.be/84VVFgGmeSA?si=ZCNTuaLW3SSEfOo8", Langue.EN));
+        livres.add(new LivreAudio("Atomics Habits", "James", 6, 18, "https://youtu.be/PQBGa2vLmLM?si=1lqZACJb13zStmCd", Langue.EN));
+        livres.add(new LivreAudio("Il Vecchio e il Mare", "Ernest Hemingway", 2, 110, "https://youtu.be/1fTDCdFi2dc?si=b8eXJvNFQ3QAY3F5", Langue.EN));
+
+
+        List<PlayList> playLists = new ArrayList<PlayList>();
+        playLists.add(chansonLiker);
+        playLists.add(audioBooki);
+        MusicBox musicBox = new MusicBox(playLists) ;
